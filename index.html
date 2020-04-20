@@ -81,44 +81,46 @@
     </div>
     </nav>
     <main class="main-content container">
-      <div class="post-content col-5">
-        <div class="create">
-          <form id="create-post">
-            <div class='form-group text-center'>
-              <fieldset>
-                <legend>Create a post</legend>
-                <input name="post[title]" type="text" class="form-control" placeholder="Title" required>
-                <textarea name="post[description]" class="form-control" placeholder="Description" required></textarea>
-                <textarea name="post[recipe]" class="form-control" placeholder="Recipe"></textarea>
-                <input name="post[rating]" type="number" class="form-control" placeholder="Rating">
-                <input type="submit" class="btn btn-outline-primary" value="Create Post">
-              </fieldset>
-            </div>
-          </form>
-        </div>
-        <div class="update">
-          <form id="update-post">
-            <div class='form-group text-center'>
-              <fieldset>
-                <legend>Update a post</legend>
-                <input name="post[id]" type="text" class="form-control" placeholder="ID" required>
+      <div class="row">
+        <div class="create-edit-post col-md-3">
+          <div class="create">
+            <form id="create-post">
+              <div class='form-group text-center'>
+                <fieldset>
+                  <legend>Create a post</legend>
+                  <input name="post[title]" type="text" class="form-control" placeholder="Title" required>
+                  <textarea name="post[description]" class="form-control" placeholder="Description" required></textarea>
+                  <textarea name="post[recipe]" class="form-control" placeholder="Recipe"></textarea>
+                  <input name="post[rating]" type="number" class="form-control" placeholder="Rating">
+                  <input type="submit" class="btn btn-outline-primary" value="Create Post">
+                </fieldset>
+              </div>
+            </form>
+          </div>
+          <div class="update">
+            <form id="update-post">
+              <div class='form-group text-center'>
+                <fieldset>
+                  <legend>Update a post</legend>
+                  <input name="post[id]" type="text" class="form-control" placeholder="ID" required>
 
-                <input name="post[title]" type="text" class="form-control" placeholder="Title" required>
-                <textarea name="post[description]" class="form-control" placeholder="Description" required></textarea>
-                <textarea name="post[recipe]" class="form-control" placeholder="Recipe"></textarea>
-                <input name="post[rating]" type="number" class="form-control" placeholder="Rating">
-                <input type="submit" class="btn btn-outline-primary" value="Update Post">
-              </fieldset>
-            </div>
-          </form>
+                  <input name="post[title]" type="text" class="form-control" placeholder="Title" required>
+                  <textarea name="post[description]" class="form-control" placeholder="Description" required></textarea>
+                  <textarea name="post[recipe]" class="form-control" placeholder="Recipe"></textarea>
+                  <input name="post[rating]" type="number" class="form-control" placeholder="Rating">
+                  <input type="submit" class="btn btn-outline-primary" value="Update Post">
+                </fieldset>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="all-posts"></div>
-      </div>
-      <div class="user-message-and-buttons col-3">
-        <div class="message" id='message'></div>
-        <div class="nav-buttons">
-          <button id="showPostsButton" class="btn btn-info">Show Posts</button>
-          <button id="clearPostsButton" class="btn btn-outline-info">Clear Posts</button>
+        <div class="all-posts col-md-7"></div>
+        <div class="user-message-and-buttons col-md-2">
+          <div class="message" id='message'></div>
+          <div class="nav-buttons">
+            <button id="showPostsButton" class="btn btn-info">Show Posts</button>
+            <button id="clearPostsButton" class="btn btn-outline-info">Clear Posts</button>
+          </div>
         </div>
       </div>
     </main>
