@@ -18,7 +18,7 @@
 }
 
 h6 {
-  color: yellow;
+  color: purple;
 }
 
 h1 {
@@ -31,10 +31,29 @@ h1 {
   display: flex;
 }
 
+.user-message-and-buttons {
+  background-color: yellow;
+}
+
+.create-edit-post {
+  background-color: orange;
+}
+
+.all-posts {
+  background-color: green;
+}
+
 .change-password {
   margin: auto;
 }
 
 .form-group {
   margin: auto;
+}
+
+.footer {
+  background-color: purple;
+  color: white;
+  font-size: .8rem;
+  text-align: center;
 }
